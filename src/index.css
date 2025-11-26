@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global tweaks */
+html, body, #root { height: 100%; }
+body { @apply bg-white text-gray-800 antialiased; }
+
+/* optional helper */
+.container-max { max-width: 64rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
