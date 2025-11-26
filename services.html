@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- FAVICON -->
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jpg" />
+
+  <title>Oktagon Photography | Wedding, Studio & Foto Booth</title>
+  <meta name="description" content="Oktagon Photography – wedding, studio, dan foto booth untuk acara keluarga, brand, dan corporate." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+  <!-- NAVBAR (sama dengan halaman lain) -->
+  <header class="sticky top-0 z-40 border-b border-neutral-200 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-900 text-xs font-semibold tracking-[0.22em]">
+        <img src="images/logo.jpg" alt="Logo Oktagon" class="h-full w-full rounded-full object-cover" />
+        </div>
+        <div class="leading-tight">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em]">Oktagon</p>
+          <p class="text-[11px] uppercase tracking-[0.18em] text-neutral-500">Photography</p>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-[13px] font-medium text-neutral-700 md:flex">
+        <a href="index.html" class="hover:text-neutral-900">Beranda</a>
+        <a href="portfolio.html" class="hover:text-neutral-900">Portfolio</a>
+        <a href="services.html" class="text-neutral-900">Layanan & Harga</a>
+        <a href="studio.html" class="hover:text-neutral-900">Studio</a>
+        <a href="contact.html" class="hover:text-neutral-900">Kontak</a>
+      </nav>
+
+      <div class="hidden md:flex">
+        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-xs font-semibold text-neutral-50">
+          Booking Jadwal
+        </a>
+      </div>
+
+      <!-- Mobile button -->
+      <button id="nav-toggle" class="inline-flex items-center justify-center rounded-full border border-neutral-300 p-2 md:hidden">
+        <span class="sr-only">Toggle navigation</span>
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 6l12 12M6 18L18 6" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="nav-menu" class="hidden border-t border-neutral-200 bg-white md:hidden">
+      <nav class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 text-sm">
+        <a href="index.html" class="py-1 text-neutral-700">Beranda</a>
+        <a href="portfolio.html" class="py-1 text-neutral-700">Portfolio</a>
+        <a href="services.html" class="py-1 text-neutral-900">Layanan & Harga</a>
+        <a href="studio.html" class="py-1 text-neutral-700">Studio</a>
+        <a href="contact.html" class="py-2 mt-1 rounded-full bg-neutral-900 text-center text-neutral-50">Booking Jadwal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / INTRO -->
+    <section class="border-b border-neutral-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="grid gap-8 md:grid-cols-[1.2fr,0.9fr] md:items-end">
+          <div>
+            <p class="text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500">Layanan & Harga</p>
+            <h1 class="mt-1 text-2xl font-semibold tracking-tight text-neutral-900 md:text-3xl">
+              Paket dokumentasi, studio, dan foto booth
+              <span class="italic">yang bisa disesuaikan dengan skala acara.</span>
+            </h1>
+            <p class="mt-3 max-w-2xl text-sm text-neutral-600">
+              Halaman ini memberi gambaran kisaran harga untuk wedding, event, sesi studio, dan layanan foto booth. Detail final akan menyesuaikan durasi, lokasi, dan kebutuhan tambahan seperti album cetak, extra fotografer, atau desain frame khusus.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-neutral-200 bg-neutral-50 p-4 text-xs text-neutral-600">
+            <p class="mb-2 text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Catatan cepat</p>
+            <ul class="space-y-1">
+              <li>• Harga dapat berubah sesuai kompleksitas acara dan jarak lokasi.</li>
+              <li>• Booking fix setelah DP (isi persen di sini) dan konfirmasi tertulis.</li>
+              <li>• Untuk kebutuhan di luar area utama, dapat dikenakan biaya transportasi.</li>
+              <li>• Foto booth biasanya punya durasi dan kuota cetak yang spesifik per paket.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KARTU RINGKAS PAKET UTAMA (TERMASUK FOTO BOOTH) -->
+    <section class="border-b border-neutral-200 bg-neutral-50">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl">Ringkasan paket utama</h2>
+            <p class="mt-1 max-w-xl text-sm text-neutral-600">
+              Empat paket dasar sebagai titik awal. Di luar paket ini, Oktagon tetap terbuka untuk penyesuaian khusus, termasuk kombinasi dokumentasi + foto booth di acara yang sama.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid gap-6 text-sm md:grid-cols-2 xl:grid-cols-4">
+          <!-- Wedding -->
+          <article class="flex flex-col justify-between rounded-3xl border border-neutral-200 bg-white p-5">
+            <div class="space-y-2">
+              <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Wedding / Engagement</p>
+              <h3 class="text-base font-semibold text-neutral-900">Paket Wedding Intimate</h3>
+              <p class="text-xs text-neutral-600">Cocok untuk akad / pemberkatan dan resepsi berskala kecil hingga menengah.</p>
+              <ul class="mt-2 space-y-1 text-xs text-neutral-700">
+                <li>• 1–2 fotografer</li>
+                <li>• Durasi 4–6 jam</li>
+                <li>• File digital high-res + seleksi edited</li>
+                <li>• Galeri online untuk sharing keluarga</li>
+              </ul>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs text-neutral-500">
+              <span>Mulai dari</span>
+              <span class="text-sm font-semibold text-neutral-900">Rp X.XXX.XXX</span>
+            </div>
+          </article>
+
+          <!-- Event -->
+          <article class="flex flex-col justify-between rounded-3xl border border-neutral-200 bg-white p-5">
+            <div class="space-y-2">
+              <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Event / Corporate</p>
+              <h3 class="text-base font-semibold text-neutral-900">Paket Event Harian</h3>
+              <p class="text-xs text-neutral-600">Untuk seminar, gathering, konser, hingga event internal perusahaan.</p>
+              <ul class="mt-2 space-y-1 text-xs text-neutral-700">
+                <li>• 1–2 fotografer (bisa ditambah)</li>
+                <li>• Durasi fleksibel (isi range jam)</li>
+                <li>• Dokumentasi pembicara, crowd, dan detail venue</li>
+                <li>• Pengiriman beberapa foto cepat untuk keperluan publikasi</li>
+              </ul>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs text-neutral-500">
+              <span>Mulai dari</span>
+              <span class="text-sm font-semibold text-neutral-900">Rp X.XXX.XXX</span>
+            </div>
+          </article>
+
+          <!-- Studio -->
+          <article class="flex flex-col justify-between rounded-3xl border border-neutral-200 bg-white p-5">
+            <div class="space-y-2">
+              <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Studio & Family</p>
+              <h3 class="text-base font-semibold text-neutral-900">Paket Studio Session</h3>
+              <p class="text-xs text-neutral-600">Family portrait, foto wisuda, atau sesi personal branding di studio Oktagon.</p>
+              <ul class="mt-2 space-y-1 text-xs text-neutral-700">
+                <li>• Durasi 30–60 menit</li>
+                <li>• X file edited high-res</li>
+                <li>• Guidance pose dan set lighting</li>
+                <li>• Pilihan background (isi opsi warna)</li>
+              </ul>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs text-neutral-500">
+              <span>Mulai dari</span>
+              <span class="text-sm font-semibold text-neutral-900">Rp XXX.XXX</span>
+            </div>
+          </article>
+
+          <!-- Foto Booth -->
+          <article class="flex flex-col justify-between rounded-3xl border border-neutral-200 bg-white p-5">
+            <div class="space-y-2">
+              <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Foto Booth Event</p>
+              <h3 class="text-base font-semibold text-neutral-900">Paket Foto Booth</h3>
+              <p class="text-xs text-neutral-600">Foto booth untuk hajatan keluarga, event kantor, hingga ulang tahun dengan print instan.</p>
+              <ul class="mt-2 space-y-1 text-xs text-neutral-700">
+                <li>• Durasi 3–4 jam (bisa ditambah)</li>
+                <li>• Kuota cetak per jam (isi kuota)</li>
+                <li>• Desain frame / template custom</li>
+                <li>• Operator standby selama acara</li>
+              </ul>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs text-neutral-500">
+              <span>Mulai dari</span>
+              <span class="text-sm font-semibold text-neutral-900">Rp X.XXX.XXX</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABEL DETAIL PAKET (TAMBAH BARIS FOTO BOOTH) -->
+    <section class="border-b border-neutral-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="mb-4 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl">Perbandingan paket</h2>
+            <p class="mt-1 max-w-xl text-sm text-neutral-600">
+              Tabel ini membantu calon klien membandingkan cepat antara paket wedding, event, studio, dan foto booth. Angka di bawah bisa disesuaikan dengan strategi harga Oktagon.
+            </p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50">
+          <div class="overflow-x-auto">
+            <table class="min-w-full border-separate border-spacing-0 text-xs text-neutral-800">
+              <thead>
+                <tr class="bg-neutral-100 text-[11px] uppercase tracking-[0.16em] text-neutral-500">
+                  <th class="border-b border-neutral-200 px-4 py-3 text-left font-medium">Paket</th>
+                  <th class="border-b border-neutral-200 px-4 py-3 text-left font-medium">Cocok untuk</th>
+                  <th class="border-b border-neutral-200 px-4 py-3 text-left font-medium">Durasi</th>
+                  <th class="border-b border-neutral-200 px-4 py-3 text-left font-medium">Fotografer / Operator</th>
+                  <th class="border-b border-neutral-200 px-4 py-3 text-left font-medium">Output utama</th>
+                  <th class="border-b border-neutral-200 px-4 py-3 text-right font-medium">Mulai dari</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-neutral-100">
+                  <td class="px-4 py-3 font-semibold text-neutral-900">Wedding Intimate</td>
+                  <td class="px-4 py-3">Akad + resepsi skala kecil/menengah</td>
+                  <td class="px-4 py-3">4–6 jam</td>
+                  <td class="px-4 py-3">1–2 fotografer</td>
+                  <td class="px-4 py-3">File digital high-res + seleksi edited</td>
+                  <td class="px-4 py-3 text-right font-semibold">Rp X.XXX.XXX</td>
+                </tr>
+                <tr class="border-b border-neutral-100">
+                  <td class="px-4 py-3 font-semibold text-neutral-900">Wedding Full Day</td>
+                  <td class="px-4 py-3">Persiapan sampai akhir resepsi</td>
+                  <td class="px-4 py-3">8–10 jam</td>
+                  <td class="px-4 py-3">2 fotografer</td>
+                  <td class="px-4 py-3">File digital, seleksi edited, opsi album cetak</td>
+                  <td class="px-4 py-3 text-right font-semibold">Rp X.XXX.XXX</td>
+                </tr>
+                <tr class="border-b border-neutral-100">
+                  <td class="px-4 py-3 font-semibold text-neutral-900">Event Harian</td>
+                  <td class="px-4 py-3">Seminar, gathering, konser</td>
+                  <td class="px-4 py-3">4–8 jam</td>
+                  <td class="px-4 py-3">1–2 fotografer</td>
+                  <td class="px-4 py-3">File digital + beberapa foto quick edit</td>
+                  <td class="px-4 py-3 text-right font-semibold">Rp X.XXX.XXX</td>
+                </tr>
+                <tr class="border-b border-neutral-100">
+                  <td class="px-4 py-3 font-semibold text-neutral-900">Studio Session</td>
+                  <td class="px-4 py-3">Family portrait, wisuda, profil</td>
+                  <td class="px-4 py-3">30–60 menit</td>
+                  <td class="px-4 py-3">1 fotografer</td>
+                  <td class="px-4 py-3">X–Y file edited high-res</td>
+                  <td class="px-4 py-3 text-right font-semibold">Rp XXX.XXX</td>
+                </tr>
+                <tr class="border-b border-neutral-100">
+                  <td class="px-4 py-3 font-semibold text-neutral-900">Foto Booth Event</td>
+                  <td class="px-4 py-3">Hajatan, event kantor, ulang tahun</td>
+                  <td class="px-4 py-3">3–4 jam (bisa extend)</td>
+                  <td class="px-4 py-3">1 operator + alat foto booth</td>
+                  <td class="px-4 py-3">Cetak instan per sesi + file digital</td>
+                  <td class="px-4 py-3 text-right font-semibold">Rp X.XXX.XXX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADD-ON / OPSI TAMBAHAN -->
+    <section class="border-b border-neutral-200 bg-neutral-50">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="mb-4 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl">Opsi tambahan</h2>
+            <p class="mt-1 max-w-xl text-sm text-neutral-600">
+              Add-on yang sering diminta klien. Semua bersifat opsional dan bisa dikombinasikan dengan paket utama, termasuk foto booth di acara wedding atau corporate.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3 text-xs text-neutral-700">
+          <div class="rounded-2xl border border-neutral-200 bg-white p-4">
+            <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Cetak & album</p>
+            <ul class="mt-2 space-y-1">
+              <li>• Album cetak (isi ukuran)</li>
+              <li>• Cetak foto tambahan</li>
+              <li>• Frame / bingkai (opsional)</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-neutral-200 bg-white p-4">
+            <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Coverage ekstra</p>
+            <ul class="mt-2 space-y-1">
+              <li>• Extra jam dokumentasi</li>
+              <li>• Extra fotografer</li>
+              <li>• Pre-wedding / sesi terpisah</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-neutral-200 bg-white p-4">
+            <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Foto booth & delivery</p>
+            <ul class="mt-2 space-y-1">
+              <li>• Extra jam foto booth</li>
+              <li>• Extra kuota cetak</li>
+              <li>• Desain template frame tambahan</li>
+              <li>• Galeri online & arsip file digital</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ RINGKAS -->
+    <section class="border-b border-neutral-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="grid gap-8 md:grid-cols-[1.1fr,0.9fr]">
+          <div>
+            <h2 class="mb-3 text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl">Pertanyaan yang sering diajukan</h2>
+            <div class="space-y-4 text-sm text-neutral-700">
+              <div>
+                <p class="font-medium text-neutral-900">Apakah harga sudah termasuk biaya transport?</p>
+                <p class="text-neutral-600">Untuk area [isi area utama], harga biasanya sudah termasuk. Untuk luar area, akan diinformasikan biaya tambahan setelah mengetahui lokasi.</p>
+              </div>
+              <div>
+                <p class="font-medium text-neutral-900">Bagaimana sistem booking dan pembayaran?</p>
+                <p class="text-neutral-600">Booking dinyatakan fix setelah DP (isi persen) dan konfirmasi tertulis via WhatsApp. Pelunasan biasanya dilakukan H-1 atau hari H sebelum acara dimulai.</p>
+              </div>
+              <div>
+                <p class="font-medium text-neutral-900">Bagaimana dengan foto booth, apa ada batas cetak?</p>
+                <p class="text-neutral-600">Setiap paket foto booth memiliki durasi dan kuota cetak tertentu. Jika ingin menambah jam atau kuota, bisa diatur dengan biaya tambahan.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-700">
+            <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Konsultasi harga</p>
+            <p class="mt-2 text-neutral-700">Jika klien datang dengan budget tertentu, Oktagon tetap bisa menyesuaikan paket selama masih memungkinkan secara teknis dan jadwal.</p>
+            <p class="mt-3 text-[11px] text-neutral-500">Detail kontak dan form konsultasi ada di halaman Kontak.</p>
+            <a href="contact.html" class="mt-4 inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-xs font-semibold text-neutral-50">
+              Hubungi untuk simulasi paket
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA KE KONTAK -->
+    <section class="border-t border-neutral-200 bg-neutral-900">
+      <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-4 py-8 text-neutral-50 sm:flex-row sm:px-6">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-400">Langkah berikutnya</p>
+          <h2 class="text-lg font-semibold tracking-tight">Ingin kombinasi dokumentasi + foto booth?</h2>
+          <p class="mt-1 text-sm text-neutral-300">Kirim jenis acara, estimasi durasi, dan kebutuhan (wedding, event, studio, foto booth). Tim Oktagon akan bantu susun paket yang paling relevan.</p>
+        </div>
+        <a href="contact.html" class="inline-flex items-center gap-2 rounded-full bg-neutral-50 px-5 py-2.5 text-xs font-semibold text-neutral-900">
+          Buka halaman kontak
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-200 bg-white py-4">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-[11px] text-neutral-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <p>© <span id="year"></span> Oktagon Photography.</p>
+      <p>Instagram: <span class="text-neutral-800 font-medium">@oktagon.studio</span> · <span class="text-neutral-800 font-medium">@oktagon_photography</span> · <span class="text-neutral-800 font-medium">@oktagonbooth</span></p>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    if (toggle && menu && iconOpen && iconClose) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        iconOpen.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>

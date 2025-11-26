@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- FAVICON -->
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jpg" />
+
+  <title>Oktagon Photography | Wedding, Studio & Foto Booth</title>
+  <meta name="description"
+    content="Oktagon Photography – wedding, studio, dan foto booth untuk acara keluarga, brand, dan corporate." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+  <!-- NAVBAR (konsisten) -->
+  <header class="sticky top-0 z-40 border-b border-neutral-200 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-2">
+        <div
+          class="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-900 text-xs font-semibold tracking-[0.22em]">
+          <img src="images/logo.jpg" alt="Logo Oktagon" class="h-full w-full rounded-full object-cover" />
+        </div>
+        <div class="leading-tight">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em]">Oktagon</p>
+          <p class="text-[11px] uppercase tracking-[0.18em] text-neutral-500">Photography</p>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-[13px] font-medium text-neutral-700 md:flex">
+        <a href="index.html" class="hover:text-neutral-900">Beranda</a>
+        <a href="portfolio.html" class="hover:text-neutral-900">Portfolio</a>
+        <a href="services.html" class="hover:text-neutral-900">Layanan & Harga</a>
+        <a href="studio.html" class="hover:text-neutral-900">Studio</a>
+        <a href="contact.html" class="text-neutral-900">Kontak</a>
+      </nav>
+
+      <div class="hidden md:flex">
+        <a href="#form-booking"
+          class="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-xs font-semibold text-neutral-50">
+          Form Booking
+        </a>
+      </div>
+
+      <!-- Mobile button -->
+      <button id="nav-toggle"
+        class="inline-flex items-center justify-center rounded-full border border-neutral-300 p-2 md:hidden">
+        <span class="sr-only">Toggle navigation</span>
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none"
+          stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hidden h-5 w-5" fill="none"
+          stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 6l12 12M6 18L18 6" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="nav-menu" class="hidden border-t border-neutral-200 bg-white md:hidden">
+      <nav class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 text-sm">
+        <a href="index.html" class="py-1 text-neutral-700">Beranda</a>
+        <a href="portfolio.html" class="py-1 text-neutral-700">Portfolio</a>
+        <a href="services.html" class="py-1 text-neutral-700">Layanan & Harga</a>
+        <a href="studio.html" class="py-1 text-neutral-700">Studio</a>
+        <a href="contact.html" class="py-2 mt-1 rounded-full bg-neutral-900 text-center text-neutral-50">Form
+          Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INTRO & KONTAK CEPAT -->
+    <section class="border-b border-neutral-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="grid gap-8 md:grid-cols-[1.2fr,0.9fr] md:items-start">
+          <div>
+            <p class="text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-500">Kontak & Booking</p>
+            <h1 class="mt-1 text-2xl font-semibold tracking-tight text-neutral-900 md:text-3xl">
+              Kirim detail acara atau sesi studio yang kamu mau.
+            </h1>
+            <p class="mt-3 max-w-2xl text-sm text-neutral-600">
+              Untuk mempercepat proses, kamu bisa langsung kirim detail singkat: jenis acara, tanggal, lokasi, dan
+              layanan yang diinginkan (wedding / event / studio / foto booth). Tim Oktagon akan balas dengan
+              ketersediaan jadwal dan estimasi paket.</p>
+
+            <div class="mt-5 grid gap-4 text-sm text-neutral-700 sm:grid-cols-2">
+              <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
+                <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">WhatsApp utama</p>
+                <p class="mt-1 text-sm font-semibold text-neutral-900">[+62-****-****-****]</p>
+                <p class="mt-1 text-xs text-neutral-600">Balasan tercepat biasanya lewat WhatsApp. Boleh kirim voice
+                  note kalau lebih nyaman.</p>
+              </div>
+
+              <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
+                <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Instagram</p>
+                <p class="mt-1 text-xs text-neutral-700">Update hasil terbaru & behind the scenes:</p>
+                <ul class="mt-1 space-y-1 text-xs text-neutral-800">
+                  <li>• <a href="https://www.instagram.com/oktagon.studio" target="_blank" rel="noopener noreferrer"
+                      class="hover:underline">@oktagon.studio</a></li>
+                  <li>• <a href="https://www.instagram.com/oktagon_photography" target="_blank"
+                      rel="noopener noreferrer" class="hover:underline">@oktagon_photography</a></li>
+                  <li>• <a href="https://www.instagram.com/oktagonbooth" target="_blank" rel="noopener noreferrer"
+                      class="hover:underline">@oktagonbooth</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-neutral-200 bg-neutral-50 p-4 text-xs text-neutral-700">
+            <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Tips sebelum kirim pesan</p>
+            <ul class="mt-2 space-y-1">
+              <li>• Sebutkan tanggal & jam acara (jika sudah pasti / perkiraan).</li>
+              <li>• Lokasi: venue / kota / area.</li>
+              <li>• Layanan yang dibutuhkan: wedding, event, studio, foto booth, atau kombinasi.</li>
+              <li>• Perkiraan jumlah tamu (untuk event & foto booth).</li>
+              <li>• Budget range jika ada, supaya tim bisa bantu sesuaikan paket.</li>
+            </ul>
+            <p class="mt-3 text-[11px] text-neutral-500">Semakin lengkap info awal, semakin cepat tim bisa kirim
+              estimasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM BOOKING SEDERHANA -->
+    <section id="form-booking" class="border-b border-neutral-200 bg-neutral-50">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="mb-4 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl">Form booking singkat</h2>
+            <p class="mt-1 max-w-xl text-sm text-neutral-600">
+              Form ini bisa dihubungkan ke email atau Google Form milik Oktagon. Untuk saat ini masih contoh layout, isi
+              dan aksi form bisa disesuaikan dengan sistem yang dipakai.</p>
+          </div>
+        </div>
+
+        <form
+          class="grid gap-4 rounded-3xl border border-neutral-200 bg-white p-5 text-sm text-neutral-800 md:grid-cols-[minmax(0,1.2fr)]">
+          <div class="grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="mb-1 block text-xs font-medium text-neutral-600">Nama</label>
+              <input id="nama" type="text" placeholder="Nama lengkap"
+                class="w-full rounded-full border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900" />
+            </div>
+            <div>
+              <label class="mb-1 block text-xs font-medium text-neutral-600">Kontak WhatsApp</label>
+              <input id="wa" type="text" placeholder="08xxxxxxxxxx"
+                class="w-full rounded-full border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900" />
+            </div>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="mb-1 block text-xs font-medium text-neutral-600">Jenis layanan</label>
+              <select id="layanan"
+                class="w-full rounded-full border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900">
+                <option value="">Pilih salah satu</option>
+                <option>Wedding / Engagement</option>
+                <option>Event / Corporate</option>
+                <option>Studio (wisuda / keluarga / profil)</option>
+                <option>Foto Booth</option>
+                <option>Kombinasi (tulis di catatan)</option>
+              </select>
+            </div>
+            <div>
+              <label class="mb-1 block text-xs font-medium text-neutral-600">Tanggal acara / sesi</label>
+              <input id="tanggal" type="date"
+                class="w-full rounded-full border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900" />
+            </div>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="mb-1 block text-xs font-medium text-neutral-600">Lokasi / venue</label>
+              <input id="lokasi" type="text" placeholder="Nama venue / kota / area"
+                class="w-full rounded-full border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900" />
+            </div>
+            <div>
+              <label class="mb-1 block text-xs font-medium text-neutral-600">Perkiraan jumlah tamu / orang</label>
+              <input id="tamu" type="text" placeholder="Contoh: 50–100 orang"
+                class="w-full rounded-full border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900" />
+            </div>
+          </div>
+
+          <div>
+            <label class="mb-1 block text-xs font-medium text-neutral-600">Budget range (opsional)</label>
+            <input id="budget" type="text" placeholder="Contoh: sekitar Rp x.xxx.xxx"
+              class="w-full rounded-full border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900" />
+          </div>
+
+          <div>
+            <label class="mb-1 block text-xs font-medium text-neutral-600">Catatan tambahan</label>
+            <textarea id="catatan" rows="4"
+              placeholder="Tulis konsep, referensi foto, atau detail lain yang perlu diketahui tim Oktagon."
+              class="w-full rounded-2xl border border-neutral-300 px-3 py-2 text-sm outline-none focus:border-neutral-900"></textarea>
+          </div>
+
+          <div
+            class="flex flex-col gap-3 border-t border-neutral-200 pt-4 text-xs text-neutral-600 sm:flex-row sm:items-center sm:justify-between">
+            <p>Setelah form ini terkirim, tim Oktagon akan menghubungi kamu via WhatsApp untuk konfirmasi dan penjelasan
+              paket.</p>
+            <button type="button"
+              class="inline-flex items-center justify-center rounded-full bg-neutral-900 px-5 py-2 text-xs font-semibold text-neutral-50"
+              onclick="kirimKeWA()">
+              Kirim Form
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      function kirimKeWA() {
+        const nama = document.getElementById("nama").value || "-";
+        const wa = document.getElementById("wa").value || "-";
+        const layanan = document.getElementById("layanan").value || "-";
+        const tanggal = document.getElementById("tanggal").value || "-";
+        const lokasi = document.getElementById("lokasi").value || "-";
+        const tamu = document.getElementById("tamu").value || "-";
+        const budget = document.getElementById("budget").value || "-";
+        const catatan = document.getElementById("catatan").value || "-";
+
+        const text = `
+Halo, saya mau booking.
+Nama: ${nama}
+WA: ${wa}
+Layanan: ${layanan}
+Tanggal: ${tanggal}
+Lokasi: ${lokasi}
+Tamu: ${tamu}
+Budget: ${budget}
+Catatan: ${catatan}
+    `;
+
+        const url = "https://wa.me/6281234567890?text=" + encodeURIComponent(text);
+        window.open(url, "_blank");
+      }
+    </script>
+
+    <!-- INFO ALAMAT & JAM OPERASIONAL -->
+    <section class="border-b border-neutral-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-12">
+        <div class="grid gap-8 md:grid-cols-2">
+          <div>
+            <h2 class="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl">Alamat studio</h2>
+            <p class="mt-1 text-sm text-neutral-600">dekat Unmul, Jl. Perjuangan 4 No.51, Sempaja Sel., Kec. Samarinda
+              Utara, Kota Samarinda, Kalimantan Timur 75119</p>
+            <p class="mt-2 text-xs text-neutral-600">Untuk sesi studio, disarankan booking jadwal terlebih dahulu supaya
+              pengalaman lebih nyaman dan tidak terburu-buru.</p>
+
+            <div class="mt-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-3 text-xs text-neutral-700">
+              <p class="font-medium text-neutral-900">Jam operasional</p>
+              <p class="mt-1">Setiap Hari: 09.30 - 18.00</p>
+              <p class="mt-1 text-[11px] text-neutral-500">Jam bisa berubah jika ada jadwal wedding / event luar.
+                Konfirmasi jam kedatangan via WhatsApp sebelum berangkat.</p>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-neutral-200 bg-neutral-50 p-4 text-xs text-neutral-700">
+            <p class="text-[11px] font-medium uppercase tracking-[0.18em] text-neutral-500">Lokasi di Maps</p>
+            <p class="mt-2">dekat Unmul, Jl. Perjuangan 4 No.51, Sempaja Sel., Kec. Samarinda Utara, Kota Samarinda,
+              Kalimantan Timur 75119.</p>
+            <div class="mt-3 overflow-hidden rounded-2xl border border-neutral-200">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.688804164553!2d117.15754697568563!3d-0.46166213528228905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df678b1b5b29c75%3A0xb48ec190c7e9b5cf!2sOktagon%20Studio%20Foto!5e0!3m2!1sid!2sid!4v1764122706415!5m2!1sid!2sid"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA TERAKHIR -->
+    <section class="border-t border-neutral-200 bg-neutral-900">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-4 py-8 text-neutral-50 sm:flex-row sm:px-6">
+        <div>
+          <p class="text-[11px] font-medium uppercase tracking-[0.22em] text-neutral-400">Langsung chat?</p>
+          <h2 class="text-lg font-semibold tracking-tight">Kirim pesan WhatsApp ke Oktagon.</h2>
+          <p class="mt-1 text-sm text-neutral-300">Kalimat sesederhana “Mau tanya paket foto untuk tanggal …” sudah
+            cukup. Sisanya bisa dibantu lewat chat.</p>
+        </div>
+        <a href="https://wa.me/[ganti_dengan_nomor]"
+          class="inline-flex items-center gap-2 rounded-full bg-neutral-50 px-5 py-2.5 text-xs font-semibold text-neutral-900">
+          Chat via WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-200 bg-white py-4">
+    <div
+      class="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-[11px] text-neutral-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <p>© <span id="year"></span> Oktagon Photography.</p>
+      <p>Instagram: <span class="text-neutral-800 font-medium">@oktagon.studio</span> · <span
+          class="text-neutral-800 font-medium">@oktagon_photography</span> · <span
+          class="text-neutral-800 font-medium">@oktagonbooth</span></p>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    if (toggle && menu && iconOpen && iconClose) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        iconOpen.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+
+</html>
